@@ -186,7 +186,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px; 
+    padding: 8px 32px; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -199,9 +199,9 @@ body {
 }
 
 .nav-logo {
-    width: 250px; /* Ancho Desktop */
+    width: 160px; /* Ancho Desktop */
     height: auto;
-    max-height: 150px;
+    max-height: 80px;
     object-fit: contain;
     display: block;
 }
