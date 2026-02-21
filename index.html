@@ -245,85 +245,80 @@
     </section>
 
         
-    <section id="contacto" class="section-white">
-        <div class="container">
-            <div class="center-header">
-                <h4 class="section-subtitle">CONTÁCTANOS</h4>
-                <h2>Dejanos tu consulta</h2>
-                <p>Te responderemos a la brevedad.</p>
-            </div>
-
-            <div class="contact-form-wrapper">
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo</label>
-                            <input 
-                                type="text" 
-                                id="nombre" 
-                                name="nombre" 
-                                placeholder="Ej: Matías Russo" 
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                placeholder="tucorreo@ejemplo.com" 
-                                required
-                            >
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="empresa">Empresa / Organización (opcional)</label>
-                        <input 
-                            type="text" 
-                            id="empresa" 
-                            name="empresa" 
-                            placeholder="Ej: Escuela Nº 5 o PYME local"
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefono">Teléfono (opcional)</label>
-                        <input 
-                            type="tel" 
-                            id="telefono" 
-                            name="telefono" 
-                            placeholder="+54 9 11 xxxx-xxxx"
-                        >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea 
-                            id="mensaje" 
-                            name="mensaje" 
-                            rows="5" 
-                            placeholder="Contanos sobre tu proyecto o consulta..." 
-                            required
-                        ></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="acepto" required>
-                            Acepto los términos y condiciones y la política de privacidad
-                        </label>
-                    </div>
-
-                    <button type="submit">
-                        Enviar consulta
-                    </button>
-                </form>
-            </div>
+   <form class="contact-form" 
+      action="https://formsubmit.co/Codeunit.it@gmail.com" 
+      method="POST">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Ej: Matías Russo" 
+                required
+            >
         </div>
-    </section>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="tucorreo@ejemplo.com" 
+                required
+            >
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="empresa">Empresa / Organización (opcional)</label>
+        <input 
+            type="text" 
+            id="empresa" 
+            name="empresa" 
+            placeholder="Ej: Escuela Nº 5 o PYME local"
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="telefono">Teléfono (opcional)</label>
+        <input 
+            type="tel" 
+            id="telefono" 
+            name="telefono" 
+            placeholder="+54 9 11 xxxx-xxxx"
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea 
+            id="mensaje" 
+            name="mensaje" 
+            rows="5" 
+            placeholder="Contanos sobre tu proyecto o consulta..." 
+            required
+        ></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>
+            <input type="checkbox" name="acepto" required>
+            Acepto los términos y condiciones y la política de privacidad
+        </label>
+    </div>
+
+    <!-- Config extra de FormSubmit -->
+    <input type="hidden" name="_subject" value="Nueva consulta desde la web">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">
+        Enviar consulta
+    </button>
+</form>
+
 
 
     <footer id="contacto" class="footer-section">
