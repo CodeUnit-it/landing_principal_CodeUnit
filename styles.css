@@ -1605,3 +1605,54 @@ html {
         color: var(--accent);
     }
 }
+/* =========================================
+   RESCATE DEL PORTFOLIO: SOBRESCRIBE REGLAS ROTAS
+   ========================================= */
+
+/* 1. Obligamos al enlace a ser una columna vertical siempre */
+.project-card a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    min-height: auto !important; /* Mata el touch target de Kiro */
+}
+
+/* 2. Clavamos la imagen arriba para que no se deforme */
+.project-card a img,
+.project-card > img {
+    display: block !important;
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+}
+
+/* 3. El contenedor de texto ocupa todo el ancho abajo */
+.project-card .p-content {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* 4. Reescribimos las media queries SOLO para el ancho de la card */
+@media (max-width: 1024px) {
+    .project-card { width: 320px !important; }
+}
+
+@media (max-width: 768px) {
+    .project-card { width: 75vw !important; }
+    .project-card .p-content { padding: 18px !important; }
+}
+
+@media (max-width: 480px) {
+    .project-card { width: 90vw !important; }
+}
+
+@media (max-width: 320px) {
+    .project-card { width: 95vw !important; }
+}
